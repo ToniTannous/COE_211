@@ -20,7 +20,7 @@ private String day_7 = "Sunday";
    
  public void printDays() {
        
- System.out.println("The basic days of the week are: " +day_1+ " "+ day_2 + " " +day_3 + " " +" "+ day_4 + " " + day_5 + " " + day_6 + " " +day_7);                          );   
+ System.out.println("The basic days of the week are: " +day_1+ " "+ day_2 + " " +day_3 + " " +" "+ day_4 + " " + day_5 + " " + day_6 + " " +day_7);                           
    
   }
      

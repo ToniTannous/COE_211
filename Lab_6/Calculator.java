@@ -8,7 +8,7 @@ private int num1;
 private int num2;
     
 private String operator;
-private num;
+private int num;
   
 // Constructor to initialize the calculator
     
@@ -31,12 +31,13 @@ case "+":
 	add(num1,num2);
 	break;
 case "-":
-	substract(num1,num2);
+	subtract(num1,num2);
 	break;
 case "X":
 	multiply(num1,num2);
+   break;
 case "/":
-	divide(num1,nume2);
+	divide(num1,num2);
   default:
            break;
    }
@@ -52,14 +53,14 @@ case "/":
          * Insert code to decide on which function to call, based on the operator the user chose
          * Hint: Switch statement
          */
-    }
+    
 
    
  public String add(int a, int b) {
  
 num1=a;
 num2=b;
-num= num1 +nume2;
+num= num1 + num2;
 return num1 + "+" +num2+ "="+num;
    }
 
@@ -68,7 +69,7 @@ public String subtract(int a, int b) {
 
 num1 = a;
 num2 = b;
-num =num1 =num2;
+num =num1 -num2;
 return num1 + "-" +num2 +"="+num;
  }
 
@@ -92,6 +93,6 @@ return num1+ "/"+num2+ "=" +num;
 }
 
    public String toString(){
-     return num1 +operator + num2 +"=" +num;
+     return num1 +" "+operator +" "+ num2 +" = " +num;
           }
              }

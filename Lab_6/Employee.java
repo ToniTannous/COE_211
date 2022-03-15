@@ -17,7 +17,7 @@ lastName = scan.nextLine();
 System.out.println("Please input the employee's age:");
 age = scan.nextInt();
 
-System.out.println("Please input the employee's monthly salary:");
+System.out.println("Please input the employee's salary:");
 salary = scan.nextDouble();
 scan.nextLine();
     }
@@ -25,7 +25,7 @@ scan.nextLine();
          * Continue code here to ask for the first name, last name, age, and salary, IN THAT ORDER
          */
 
-    }
+    
 
     public String toString() {
     String output = "Employee information: "+ firstName +" " +lastName + ", " +age +", " +salary;
