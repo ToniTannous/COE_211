@@ -5,8 +5,8 @@ import java.io.IOException;// Import the IOException class to handle errors
 import java.util.Scanner;
 public class ExpensesTracker{
     public static void main(String[] args) throws IOException {
-        String check;
-        boolean rep = false;
+        String ans;
+        
         Scanner scan = new Scanner(System.in);
                 FileWriter fw = new FileWriter(new File("expenses.txt"));
                 BufferedWriter bw = new BufferedWriter(fw);
@@ -34,17 +34,17 @@ public class ExpensesTracker{
 
             System.out.println("Would you like to log another purchase? (y/n)");
             scan.nextLine();
-            check = scan.nextLine();
+            ans= scan.nextLine();
 
-                           } while (check.equals("y"));
+                           } while (ans.equals("y"));
 
 
         System.out.println("Get off of ZoodMall!");
         System.out.println("Would you like to read a summary of your purchases?");
-        String x = scan.nextLine();
+        String answer = scan.nextLine();
         scan.close();
          outToFile.close();
-                        if (x.equals("y")) {
+                        if (answer.equals("y")) {
                             Scanner fileScan = new Scanner(new File("expenses.txt"));
                             String url;
                                     while (fileScan.hasNext()) {
